@@ -7,8 +7,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-
-
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -17,87 +15,207 @@
 
 <body>
 
+    <!-- Navbar (fora do Header) -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo-branca.png" class="img-fluid" alt="Logo">
+            </a>
+            <!-- Mobile Menu Icon -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Header -->
     <header class="header" style="background-image: url('images/bg.jpg');">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo-branca.png" class="img-fluid" alt="" srcset="">
-                </a>
-                <!-- Mobile Menu Icon -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Menu -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
         <!-- Header Content -->
         <div class="container header-content mt-5 text-center">
             <h1 class="text-white mb-4">Aqui vai uma frase de impacto sugerindo a atividade da empresa</h1>
-
-            <!-- Contêiner de Busca -->
-            <section class="search">
-                <div class="search-titulo-botao mb-3">
-                    <div class="filtros search-titulo-botao d-flex align-items-center justify-content-center">
-                        <p class="me-2 mb-0">Encontre ATAs Públicas:</p>
-                        <button class="me-2 btn bg-warning">ATA</button>
-                        <button class="me-2 btn bg-warning">ATA</button>
-                        <button class="me-2 btn bg-warning">ATA</button>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Ex: Nome da palavra-chave" aria-label="Buscar"
-                        aria-describedby="button-addon">
-                    <button class="btn btn-success" type="button" id="button-addon">Buscar ATA</button>
-                </div>
-
-            </section>
-
         </div>
-
     </header>
+
     <section id="listaAtas" class="listaAtas">
-        <div class="container">
-            <div class="row">
-                Aqui vão as ATAs
+        <div class="container text-center">
+            <div class="main">
+                <!-- Contêiner de Busca -->
+                <section class="search">
+                    <div class="search-titulo-botao">
+                        <div class="filtros d-flex align-items-center justify-content-center">
+                            <!--    <p class="me-2 mb-0">Encontre ATAs Públicas:</p> -->
+                            <!-- <button class="me-2 btn bg-warning">ATA</button>
+                            <button class="me-2 btn bg-warning">ATA</button>
+                            <button class="me-2 btn bg-warning">ATA</button> -->
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Ex: Nome da palavra-chave"
+                            aria-label="Buscar" aria-describedby="button-addon">
+                        <button class="btn btn-success" type="button" id="button-addon">Buscar ATA</button>
+                    </div>
+
+                </section>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 my-1">
+                        <div class="card-geral mx-auto">
+                            <div class="card-header">Ata Toner HP 2025</div>
+                            <div class="card-icon">
+                                <img src="images/pdf.png" alt="Ícone PDF" class="icon-img">
+                            </div>
+                            <div class="card-texto">Aqui vai uma pequena descrição para a ATA. Bem simples, apenas para o usuário saber!</div>
+                            <div class="card-button">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 my-1">
+                        <div class="card-geral mx-auto">
+                            <div class="card-header">Ata Toner HP 2025</div>
+                            <div class="card-icon">
+                                <img src="images/pdf.png" alt="Ícone PDF" class="icon-img">
+                            </div>
+                            <div class="card-texto">Aqui vai uma pequena descrição para a ATA. Bem simples, apenas para o usuário saber!</div>
+                            <div class="card-button">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 my-1">
+                        <div class="card-geral mx-auto">
+                            <div class="card-header">Ata Toner HP 2025</div>
+                            <div class="card-icon">
+                                <img src="images/pdf.png" alt="Ícone PDF" class="icon-img">
+                            </div>
+                            <div class="card-texto">Aqui vai uma pequena descrição para a ATA. Bem simples, apenas para o usuário saber!</div>
+                            <div class="card-button">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 my-1">
+                        <div class="card-geral mx-auto">
+                            <div class="card-header">Ata Toner HP 2025</div>
+                            <div class="card-icon">
+                                <img src="images/pdf.png" alt="Ícone PDF" class="icon-img">
+                            </div>
+                            <div class="card-texto">Aqui vai uma pequena descrição para a ATA. Bem simples, apenas para o usuário saber!</div>
+                            <div class="card-button">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 my-1">
+                        <div class="card-geral mx-auto">
+                            <div class="card-header">Ata Toner HP 2025</div>
+                            <div class="card-icon">
+                                <img src="images/pdf.png" alt="Ícone PDF" class="icon-img">
+                            </div>
+                            <div class="card-texto">Aqui vai uma pequena descrição para a ATA. Bem simples, apenas para o usuário saber!</div>
+                            <div class="card-button">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 my-1">
+                        <div class="card-geral mx-auto">
+                            <div class="card-header">Ata Toner HP 2025</div>
+                            <div class="card-icon">
+                                <img src="images/pdf.png" alt="Ícone PDF" class="icon-img">
+                            </div>
+                            <div class="card-texto">Aqui vai uma pequena descrição para a ATA. Bem simples, apenas para o usuário saber!</div>
+                            <div class="card-button">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 my-1">
+                        <div class="card-geral mx-auto">
+                            <div class="card-header">Ata Toner HP 2025</div>
+                            <div class="card-icon">
+                                <img src="images/pdf.png" alt="Ícone PDF" class="icon-img">
+                            </div>
+                            <div class="card-texto">Aqui vai uma pequena descrição para a ATA. Bem simples, apenas para o usuário saber!</div>
+                            <div class="card-button">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 my-1">
+                        <div class="card-geral mx-auto">
+                            <div class="card-header">Ata Toner HP 2025</div>
+                            <div class="card-icon">
+                                <img src="images/pdf.png" alt="Ícone PDF" class="icon-img">
+                            </div>
+                            <div class="card-texto">Aqui vai uma pequena descrição para a ATA. Bem simples, apenas para o usuário saber!</div>
+                            <div class="card-button">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Baixar PDF</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- paginação -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Posterior</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-
     </section>
-    <main></main>
+
     <footer>
-        <!-- place footer here -->
+        <!-- Place footer here -->
+         <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <img src="images/logo.png" alt="" class="img-fluid">
+                    <div class="direitos">
+                        Todos os Direitos Reservados <br>
+                        Criado em 2024
+                    </div>
+                </div>
+            </div>
+         </div>
     </footer>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-        </script>
-
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-        </script>
+    </script>
     <!-- JavaScript Personalizado -->
     <script src="js/script.js"></script>
 </body>
