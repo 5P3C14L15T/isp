@@ -1,0 +1,96 @@
+/* Importa todas as variações da fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Importa todas as variações da fonte Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    height: 100vh; /* Altura do cabeçalho cobrindo a tela inteira */
+    background-size: cover; /* Faz a imagem cobrir todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    position: relative; /* Para posicionamento da navbar */
+    padding-top: 70px; /* Espaço para a navbar fixa */
+}
+
+/* Estilo da Navbar padrão */
+.navbar {
+    width: 100%;
+    background-color: transparent; /* Inicialmente transparente */
+    position: absolute; /* Posiciona a navbar no topo do header */
+    top: 0; /* Coloca a navbar no topo */
+    left: 0;
+    transition: background-color 0.3s ease; /* Transição suave */
+    z-index: 1000;
+}
+
+.navbar.navbar-scroll {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto transparente ao rolar */
+    position: fixed; /* Fixa no topo ao rolar */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Certifique-se de que esteja acima de outros conteúdos */
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0a500;
+}
+
+/* Estilos adicionais para o header e barra de busca */
+.header-content {
+    margin-top: 150px; /* Espaço para o conteúdo do header ficar abaixo da navbar */
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 50px;
+    margin-top: 180px;
+    font-family: 'Montserrat';
+    font-size: 4em;
+    font-weight: 900;
+    text-shadow: 2px 1px 20px #000;
+}
+
+.header img {
+    width: 100px;
+}
+
+.input-group {
+    max-width: 400px;
+}
+
+.input-group .form-control {
+    border-radius: 0;
+}
+
+.input-group .btn {
+    border-radius: 0;
+    background-color: #f0a500;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.input-group .btn:hover {
+    background-color: #d88a00;
+}
+
+
+/* Atas */
+
+.listaAtas {
+    height: 300px !important;
+}
