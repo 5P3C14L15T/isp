@@ -8,7 +8,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans' !important;
+    font-weight: 300;
+    font-size: 1em;
 }
 
 .header {
@@ -69,24 +71,20 @@ body {
     width: 100px;
 }
 
-.input-group {
-    max-width: 400px;
-}
-
-.input-group .form-control {
-    border-radius: 0;
-}
-
-.input-group .btn {
-    border-radius: 0;
-    background-color: #f0a500;
+.search {
+    background-color: #0000008a;
+    padding: 20px;
     color: #fff;
-    transition: background-color 0.3s ease;
+    width: 70%;
+    margin: 80px auto 0 auto;
 }
 
-.input-group .btn:hover {
-    background-color: #d88a00;
+.input-group{
+    width: 80% !important;
+    margin: 0 auto;
+    height: 50px;
 }
+
 
 
 /* Atas */
